@@ -27,6 +27,10 @@ jobs:
         with:
           version: 2 # default
           verbose: false # default
-      - name: running AWS
+      - name: creating a random file
+        run: dd if=/dev/urandom of=./random_file bs=1M count=5
+      - name: copying a file
+        run: aws s3 cp random_file s3://test-bucket-thingy/
+      - name: checking
         run: aws s3 ls s3://test-bucket-thingy/
 
