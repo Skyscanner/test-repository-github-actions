@@ -1,4 +1,4 @@
-name: Pipeline 2
+name: Pipeline 3
 
 # Controls when the action will run. 
 on:
@@ -24,7 +24,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: simulate some work
+      - name: simulate some work for build ${{ matrix.node }}
         run: sleep 360
 
       
