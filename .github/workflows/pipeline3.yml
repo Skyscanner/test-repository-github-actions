@@ -25,7 +25,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: simulate some work for build ${{ matrix.node }}
-        run: sleep 360
+        run: sleep 120
 
       
 
