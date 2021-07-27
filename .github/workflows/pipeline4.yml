@@ -25,7 +25,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: simulate some work for build ${{ matrix.node }}
-        run: sleep 90
+        run: sleep $(( 10 + RANDOM % 10 ))
+
 
       
 
