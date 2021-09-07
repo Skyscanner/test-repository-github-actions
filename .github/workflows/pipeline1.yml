@@ -25,7 +25,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: test docker
+      - name: test docker ${{ matrix.node }}
         run: |
           docker ps
           docker pull sledigabel/container-timing:latest
