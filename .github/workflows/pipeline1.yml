@@ -26,7 +26,7 @@ jobs:
         run: |
           docker ps
           docker pull sledigabel/container-timing:latest
-          docker run -ti sledigabel/container-timing:latest
+          docker run sledigabel/container-timing:latest
       # - name: Hello Actions
         # uses: 2KAbhishek/GA-Hello@v1.0
       # - name: querying github.com
